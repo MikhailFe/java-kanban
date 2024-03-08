@@ -1,7 +1,7 @@
 public class Task {
     private int id;
-    private String title;
-    private String description;
+    public String title;
+    public String description;
     private TaskStatus status;
 
     public Task(int id, String title, String description) {
@@ -9,6 +9,10 @@ public class Task {
         this.title = title;
         this.description = description;
         this.status = TaskStatus.NEW;
+    }
+
+    public void setId(int id) {
+        this.id = id;
     }
 
     public int getId() {
